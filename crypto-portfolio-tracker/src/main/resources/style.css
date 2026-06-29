@@ -1,0 +1,191 @@
+/* ==========================================================================
+   1. RESET GENERALE E CONTRASTO SCRITTURE
+   ========================================================================== */
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: #121620;
+}
+
+.main-bg {
+    -fx-background-color: #121620;
+}
+
+.label-top-stats {
+    -fx-text-fill: #ffffff !important;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 0;
+}
+
+.label-bottom-stats {
+    -fx-text-fill: #4fd1c5 !important;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.label {
+    -fx-text-fill: #ffffff !important;
+}
+
+/* ==========================================================================
+   2. TABELLA PORTAFOGLIO
+   ========================================================================== */
+.table-view {
+    -fx-background-color: #1a202c;
+    -fx-background-radius: 8px;
+    -fx-border-color: #4a5568;
+    -fx-border-radius: 8px;
+    -fx-border-width: 1px;
+    -fx-padding: 0px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #2d3748;
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-border-radius: 7px 7px 0px 0px;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-size: 40px;
+    -fx-border-color: #4a5568;
+    -fx-border-width: 0 1px 0 0;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #ffffff !important;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell {
+    -fx-background-color: #1a202c;
+    -fx-border-color: #2d3748;
+    -fx-border-width: 0 0 1px 0;
+}
+.table-row-cell:filled:hover {
+    -fx-background-color: #2d3748;
+}
+
+.table-cell {
+    -fx-text-fill: #e2e8f0 !important;
+    -fx-padding: 12px;
+    -fx-font-size: 13px;
+}
+
+/* ==========================================================================
+   3. SCHEDE DI NAVIGAZIONE SUPERIORI (TAB MENU)
+   ========================================================================== */
+.tab-pane {
+    -fx-background-color: #121620;
+}
+
+.tab-header-area {
+    -fx-background-color: #1a202c;
+    -fx-padding: 0 0 2px 0;
+}
+
+.tab {
+    -fx-background-color: #2d3748;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 6px 6px 0 0;
+}
+.tab .tab-label {
+    -fx-text-fill: #a0aec0 !important;
+    -fx-font-weight: bold;
+}
+.tab:selected {
+    -fx-background-color: #319795;
+}
+.tab:selected .tab-label {
+    -fx-text-fill: #ffffff !important;
+}
+
+/* ==========================================================================
+   4. COMPONENTI DI INPUT E BOTTONI
+   ========================================================================== */
+.text-field {
+    -fx-background-color: #2d3748;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #4a5568;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 12px;
+    -fx-prompt-text-fill: #718096;
+}
+
+.button {
+    -fx-padding: 8px 18px;
+    -fx-background-radius: 6px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+.button-primary { -fx-background-color: #3182ce; -fx-text-fill: #ffffff; }
+.button-success { -fx-background-color: #38a169; -fx-text-fill: #ffffff; }
+
+/* ==========================================================================
+   5. GRAFICO INTERATTIVO - SFONDO ALLEGGERITO E RIPOSANTE
+   ========================================================================== */
+.chart {
+    -fx-padding: 15px;
+}
+
+/* Sfondo interno alleggerito, addio nero opprimente */
+.chart-plot-background {
+    -fx-background-color: #232936 !important;
+}
+
+.chart-horizontal-grid-lines {
+    -fx-stroke: #2d3545;
+    -fx-stroke-width: 1px;
+    -fx-stroke-dash-array: 5px;
+}
+.chart-vertical-grid-lines {
+    -fx-stroke: transparent;
+}
+
+.chart-title {
+    -fx-text-fill: #ffffff !important;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.axis {
+    -fx-tick-label-fill: #a0aec0;
+    -fx-axis-label-fill: #ffffff;
+}
+
+.chart-series-line {
+    -fx-stroke: #df9a28;
+    -fx-stroke-width: 4px; /* Linea leggermente più spessa per un'interazione comoda */
+}
+
+/* RENDIAMO I PUNTI TOTALMENTE TRASPARENTI MA SENSIVILI ALL'HOVER DI CORREZIONE */
+.chart-line-symbol {
+    -fx-background-color: rgba(223, 154, 40, 0.01); /* Invisibile all'occhio ma c'è! */
+    -fx-background-radius: 6px;
+    -fx-padding: 6px; /* Definisce l'area sensibile sulla linea */
+}
+
+/* ==========================================================================
+   6. IL "FLAG POPUP" BIANCO-ORO
+   ========================================================================== */
+.custom-graph-popup {
+    -fx-background-color: #ffffff !important;
+    -fx-border-color: #df9a28 !important;
+    -fx-border-width: 2.5px !important;
+    -fx-border-radius: 4px !important;
+    -fx-background-radius: 4px !important;
+    -fx-padding: 10px 14px !important;
+    -fx-text-fill: #121620 !important;
+    -fx-font-size: 12.5px !important;
+    -fx-font-weight: bold !important;
+    -fx-line-spacing: 5px !important;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 4);
+}
+
+.context-menu {
+    -fx-background-color: #2d3748;
+    -fx-border-color: #4a5568;
+}
+.menu-item .label { -fx-text-fill: #ffffff !important; }
